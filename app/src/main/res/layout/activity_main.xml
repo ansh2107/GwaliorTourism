@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fort">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Holidify Now!"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:textSize="26sp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome to Gwalior"
+        android:id="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffff"
+        android:textSize="33dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton1"
+            android:background="@drawable/eat_unsel" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton2"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/do_sel"
+            android:layout_gravity="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:id="@+id/imageButton3"
+            android:background="@drawable/loc_unsel" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+
+    android:layout_width="wrap_content"
+    android:layout_height="260dp"
+    android:id="@+id/ViewPager"
+    android:transitionGroup="false"
+    android:touchscreenBlocksFocus="false"
+    android:nestedScrollingEnabled="true"
+    android:layout_marginTop="25dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:clickable="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="28dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:text="MAP"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_style"
+            android:id="@+id/map" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:text="VIEW MORE"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_style"
+            android:id="@+id/view_more" />
+
+    </LinearLayout>
+</LinearLayout>
